@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>GOUTTIÈRE</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img src="asset/img/goutiere.jpg" alt="goutière neuve" />
+        </div>
+        <div class="text-container">
+          <h3>Pose et Fixation</h3>
+          <p>
+            Chez <strong>Pierre Rénovation</strong>, nous prenons en charge
+            l'installation et la fixation de tous types de gouttières, qu'elles
+            soient rampantes, pendantes ou sous forme de chéneaux. Nous
+            proposons une large gamme de gouttières en divers matériaux, tels
+            que l'aluminium, le zinc et le PVC. <br />
+            Nous garantissons une installation conforme aux normes pour vos
+            gouttières, raccords et crochets, assurant ainsi une évacuation
+            efficace des eaux pluviales.
+          </p>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="image-container">
+          <img src="asset/img/gouttièresale.jpg" alt="goutière sale" />
+        </div>
+        <div class="text-container">
+          <h3>Nettoyage</h3>
+          <p>
+            Pour prévenir la détérioration de votre gouttière, il est recommandé
+            de la nettoyer régulièrement afin d'éliminer les feuilles mortes,
+            les branchages, les mousses et autres débris.
+            <br /><br />
+            <strong>Pierre Rénovation</strong> vous garantit : <br />
+            - Un contrôle minutieux du bon fonctionnement de vos gouttières en
+            vérifiant l'absence de fuites au niveau des raccords. <br />
+            - La détection précoce de fissures potentielles sur toute la
+            longueur des profils, afin de prévenir toute fuite future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

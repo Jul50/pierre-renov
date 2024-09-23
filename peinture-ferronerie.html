@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>PEINTURE SUR FERRONNERIE</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img
+            src="asset/img/produit-ferronerie.jpg"
+            alt="photo d'un portail en fer peint en noir"
+          />
+        </div>
+        <div class="text-container">
+          <p>
+            Les peintures pour fer forgé ou pour portails en fer sont conçues
+            pour décorer divers métaux ferreux et alliages, comme l'acier, la
+            fonte ou le fer. <br /><br />
+            Elles offrent une protection efficace contre les agressions
+            extérieures, empêchant ainsi l'oxydation, la rouille et la corrosion
+            de se développer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

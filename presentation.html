@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylespresentation.css" />
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>Présentation</h1>
+    <section class="presentation">
+      <p>
+        <strong>Pierre Rénovation</strong> met à votre service son expertise et
+        son savoir-faire dans toute la Manche. Nous sommes spécialisés dans une
+        gamme complète de services de rénovation, incluant la peinture
+        intérieure et extérieure, ainsi que la peinture des toitures. Nous
+        offrons également des services de démoussage pour vos toitures,
+        terrasses et murs. Notre équipe expérimentée prend en charge la peinture
+        de vos boiseries et ferronneries, ainsi que la pose de PVC et de
+        gouttières en zinc ou en PVC.<br /><br />
+        Notre entreprise se charge aussi de la réparation et du remplacement de
+        toitures, ainsi que de la pose de bac acier. Nous assurons également le
+        nettoyage de façades, de pignons et de gouttières pour maintenir vos
+        installations en parfait état.<br /><br />
+        Nous sommes disponibles pour toute demande, 7 jours sur 7 et 24 heures
+        sur 24. N'hésitez pas à contacter Pierre Rénovation au numéro direct 07
+        77 72 09 64. Que vous soyez dans le secteur de La Manche ou ses
+        environs, nous vous proposons des services complets pour la rénovation
+        de votre toiture, qu'elle soit plate ou inclinée. Nous travaillons sur
+        tous les types de couverture, y compris les ardoises et les tuiles.
+        <br /><br />
+        En tant que professionnels engagés, nous garantissons des prestations de
+        qualité supérieure et un suivi optimal pour toutes vos interventions
+      </p>
+
+      <h1>Zone d'activité</h1>
+      <p>
+        <strong>Pierre Rénovation</strong> est fière de servir une vaste zone
+        d'activité dans le département de <strong>la Manche</strong> (50).
+        <br /><br />
+        Notre expertise en rénovation et multiservices couvre des villes telles
+        que
+        <strong>Saint-Lô</strong>, <strong>Cherbourg-en-Cotentin</strong>, et
+        <strong>Granville</strong>, ainsi que des localités comme
+        <strong>Carentan-les-Marais</strong>, <strong>La Haye-du-Puits</strong>,
+        <strong>Les Pieux</strong>, et <strong>Avranches</strong>. <br /><br />
+        Nous intervenons également dans des communes comme
+        <strong>Barneville-Carteret</strong>,
+        <strong>Saint-Pair-sur-Mer</strong>, et <strong>Coutances</strong>,
+        offrant nos services de qualité dans toute la région, y compris dans des
+        villes pittoresques comme <strong>Jullouville</strong>,
+        <strong>Périers</strong> ou <strong>La Hague</strong>. <br /><br />
+        Avec notre présence dans ces villes clés, nous nous engageons à apporter
+        notre savoir-faire et notre passion pour la rénovation à chaque projet.
+      </p>
+
+      <p>
+        Nous proposons une gamme complète de services pour l'entretien de votre
+        couverture, incluant les réparations et les travaux d'étanchéité. Nous
+        intervenons sur divers types de toitures, telles que les ardoises, les
+        couvertures en fibro, et les toitures en bac acier. Nos compétences en
+        zinguerie incluent le démontage et le remplacement de chéneaux et de
+        gouttières en zinc ou en PVC, ainsi que la recherche de fuites sur les
+        toitures. <br /><br />
+        Nous assurons également le démoussage des toitures, le nettoyage des
+        façades, des pignons, des terrasses et des gouttières, ainsi que le
+        ravalement des façades pignon. <br /><br />
+        Enfin, nous proposons des services de peinture sur toiture. <br /><br />
+        Avec notre artisanat, nous garantissons un travail réalisé avec
+        responsabilité professionnelle sur l'ensemble du département de la
+        Manche.
+      </p>
+    </section>
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

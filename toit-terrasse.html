@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>TOIT TERASSE</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img
+            src="asset/img/Etancheite-toit-terrasse.jpg"
+            alt="toit terasse entrain d'etre etenchéifié"
+          />
+        </div>
+        <div class="text-container">
+          <p>
+            Une toiture terrasse doit être imperméabilisée, il existe plusieurs
+            solutions telles que : <br /><br />
+
+            Étanchéité liquide<br />
+            Étanchéité avec végétation<br />
+            Étanchéité bitumeuse.<br /><br />
+            L'étanchéité des toitures terrasses permet l'évacuation des eaux
+            pluviales et assure l'étanchéité à l'eau des bâtiments.
+          </p>
+        </div>
+      </div>
+      <div class="rectangle">
+        <div class="image-container">
+          <img
+            src="asset/img/etancheite-liquide.jpg"
+            alt="etancheite liquide sur sol"
+          />
+        </div>
+
+        <div class="text-container">
+          <p></p>
+          <h3>Étanchéité liquide</h3>
+          Les systèmes d'étanchéité liquide se composent de plusieurs couches de
+          produits liquides, qui peuvent être similaires ou variés en fonction
+          des supports. <br />
+          Une fois appliqués, ces systèmes garantissent une
+          <strong>étanchéité durable</strong>. Ils sont parfois renforcés par
+          des matériaux solides, tels que les fibres de verre, pour créer une
+          solution d'étanchéité complète adaptée à la rénovation des balcons et
+          des terrasses.<br /><br />
+          Ces produits traitent l'humidité présente dans les supports et
+          assurent une protection totale pour maintenir les performances du
+          système d'étanchéité.<br />
+
+          Les systèmes d'étanchéité liquide sont idéaux pour rénover et protéger
+          divers types de surfaces, notamment les balcons, les terrasses, les
+          toits plats, les salles de bain, les coursives, et les loggias. Ils
+          peuvent également être appliqués sur les terrasses isolées en
+          sous-face de l'élément porteur, sans limitation de surface ou de taux
+          d'humidité, à condition qu'il n'y ait pas de rétention d'eau en
+          surface.
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

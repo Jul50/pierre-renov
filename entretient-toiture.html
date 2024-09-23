@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>ENTRETIENT DES TOITURES</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img
+            src="asset/img/toiture-nettoyage.jpg"
+            alt="toiture en cours de nettoyage"
+          />
+        </div>
+        <div class="text-container">
+          <p>
+            <strong>Pierre Rénovation</strong> vous garantit un nettoyage
+            complet de votre toiture, comprenant le retrait manuel des mousses,
+            l'application d'un traitement professionnel anti-algues et
+            anti-mousses par pulvérisation, suivi d'un traitement hydrofuge.
+            <br />
+            Ce dernier permet de combler la porosité des tuiles, facilitant
+            ainsi l'évacuation des eaux de pluie. Appliqué de manière incolore
+            par pulvérisation, il se fait rapidement et prolonge la durée de vie
+            de votre toiture.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="descriptif-toitures-container">
+      <h2>L'antimousse</h2>
+
+      <p>
+        Le traitement antimousse prévient la réapparition rapide des
+        micro-organismes sur votre toiture tout en la protégeant de l'humidité.
+        Ce produit anticryptogamique existe sous différentes formes et est
+        garanti sans eau de javel ni acide. L'algicide, étant concentré, doit
+        être dilué dans l'eau avant d'être pulvérisé sur le toit. Certains
+        produits concurrents, contenant de la javel ou de l'acide, nécessitent
+        un rinçage rapide, tandis que d'autres, sans rinçage, ne montrent leurs
+        effets qu'au bout de deux mois.
+      </p>
+
+      <h2>L'hydrofuge pour toiture</h2>
+
+      <p>
+        Le traitement hydrofuge est un traitement préventif recommandé, bien
+        qu'il ne soit pas obligatoire. Ce produit professionnel protège la
+        toiture de l'humidité et des infiltrations d'eau. En fonction de la
+        solution hydrofuge choisie, il peut retarder la réapparition des mousses
+        et des lichens jusqu'à 10, voire 15 ans. C'est un traitement avantageux,
+        car il prolonge la durabilité de votre toiture en la protégeant des
+        agressions extérieures. La peinture hydrofuge est adaptée à tout type de
+        toiture. Elle peut être appliquée par pulvérisation ou à la brosse, et
+        plusieurs couches peuvent être nécessaires selon le type de solution
+        choisi.
+      </p>
+
+      <h2>L'hydrofuge incolore</h2>
+
+      <p>
+        Opter pour un hydrofuge incolore permet de protéger votre toiture tout
+        en conservant la couleur d'origine des tuiles. Ce traitement pénètre la
+        porosité du matériau pour créer un effet déperlant, tout en laissant
+        respirer la toiture. Ainsi, les polluants et les saletés glissent sur la
+        couverture et les bandes de rive, avant d'être évacués vers les
+        gouttières.
+      </p>
+    </div>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

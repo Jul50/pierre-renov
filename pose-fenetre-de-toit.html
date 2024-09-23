@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>POSE DE FÊNETRE DE TOIT</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img src="asset/img/fenetredetoit.jpg" alt="goutière neuve" />
+        </div>
+        <div class="text-container">
+          <h3>Pose et Fixation</h3>
+          <p>
+            Chez <strong>Pierre Rénovation</strong>, Nous fournissons et
+            installons des fenêtres de toit, y compris des modèles Velux.
+            L'installation d'une fenêtre de toit ou d'un Velux apporte une
+            lumière naturelle accrue et améliore la clarté de votre espace. Les
+            avantages de la pose d’une fenêtre de toit ou d’un Velux incluent :
+            <br /><br />
+            Augmentation de la luminosité et du confort : Profitez d'un apport
+            lumineux plus important et d'un espace plus agréable. <br />
+            Excellente isolation : Nos matériaux de qualité assurent une
+            isolation efficace, aussi bien en hiver qu'en été. <br />
+            Réduction des bruits extérieurs : Bénéficiez d'une atténuation
+            significative des nuisances sonores provenant de l'extérieur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

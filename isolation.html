@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>ISOLATION</h1>
+
+    <body>
+      <section class="rectangle-wrapper">
+        <div class="rectangle">
+          <div class="image-container">
+            <img src="asset/img/isolationdecombles.jpg" alt="comble isolé" />
+          </div>
+          <div class="text-container">
+            <p>
+              Fort de son expertise et de son savoir-faire,
+              <strong>Pierre Rénovation</strong> vous offre diverses solutions
+              d'isolation thermique, tant par l'intérieur que par
+              l'extérieur.<br />
+              Nous proposons des isolations utilisant la laine de verre, la
+              laine de roche, ainsi que des matériaux en laine minérale et en
+              laine de chanvre. <br />
+              De plus, nous offrons des solutions d'isolation avec des isolants
+              minces et pour les combles, afin d'assurer une performance
+              thermique optimale dans toutes les situations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        fetch("partials/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      </script>
+      <footer id="footer"></footer>
+    </body>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+}
+
+/* Style général du header */
+header {
+  width: 100%;
+}
+
+/* Style pour le bandeau */
+.bandeau {
+  background-color: #00274d; /* Bleu foncé */
+  color: #ffffff; /* Texte blanc */
+  text-align: center;
+  padding: 1px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+/* Style pour le conteneur de navigation */
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  background-color: #ffffff; /* Fond blanc pour la section des boutons */
+}
+
+/* Style pour le logo */
+.logo {
+  margin-right: 20px; /* Espacement entre le logo et les boutons */
+}
+
+/* Style pour le logo */
+.logo img {
+  height: 50px; /* Ajustez la hauteur du logo selon vos besoins */
+  width: auto; /* Conserve les proportions du logo */
+  display: block; /* Assure que l'image du logo ne dépasse pas son conteneur */
+}
+
+/* Style pour la section des boutons */
+/* Style pour la section des boutons */
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux boutons de passer à la ligne */
+  gap: 10px; /* Espacement entre les boutons */
+  justify-content: space-between; /* Espace entre les boutons centrés et ceux alignés à droite */
+  width: 100%;
+}
+
+/* Conteneur pour les boutons alignés à gauche */
+.nav-buttons-left,
+.nav-buttons-right {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux boutons de passer à la ligne dans chaque conteneur */
+  gap: 10px; /* Espace entre les boutons */
+}
+
+/* Style pour les boutons */
+.nav-buttons button {
+  background-color: #00274d; /* Couleur des boutons */
+  color: #ffffff; /* Texte blanc */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px; /* Ajustez le padding pour équilibrer largeur et hauteur */
+  font-family: Roboto, sans-serif;
+  font-size: 25px; /* Réduit la taille du texte pour plus de réactivité */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Empêche le texte des boutons de se casser sur plusieurs lignes */
+}
+
+/* Couleur du bouton devis gratuit */
+.nav-buttons .devis-gratuit {
+  background-color: #00274d; /* Même couleur que le bandeau */
+}
+
+/* Effet de survol pour tous les boutons */
+.phone-button:hover {
+  background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Style spécifique pour le bouton téléphone */
+.phone-button {
+  background-color: #00274d; /* Couleur des boutons */
+  color: #ffffff; /* Texte blanc */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px; /* Ajustez le padding pour équilibrer largeur et hauteur */
+  font-family: Roboto, sans-serif;
+  font-size: 25px; /* Réduit la taille du texte pour plus de réactivité */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Empêche le texte des boutons de se casser sur plusieurs lignes */
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Style pour l'icône de téléphone */
+.phone-button i {
+  margin-right: 5px; /* Espace entre l'icône et le texte */
+}
+.nav-buttons button:hover {
+  background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Section du carrousel */
+.carousel-section {
+  width: 100%; /* Prend 100% de la largeur de la page */
+  margin: 0; /* Enlève la marge automatique */
+  padding: 0; /* Enlève tout padding supplémentaire */
+}
+
+/* Conteneur du carrousel */
+.carousel-container {
+  position: relative;
+  width: 100%; /* Prend 100% de la largeur */
+  overflow: hidden;
+  max-height: 600px; /* Hauteur maximale du carrousel pour effet bandeau */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%; /* Prend toute la largeur */
+}
+
+.carousel-item {
+  min-width: 100%; /* Chaque image prend 100% de la largeur */
+  height: 300px; /* Hauteur fixe pour un effet bandeau */
+  position: relative; /* Nécessaire pour positionner les captions correctement */
+}
+
+.carousel-item img {
+  width: 100%; /* Force l'image à occuper toute la largeur de son conteneur */
+  height: 100%; /* Étire l'image pour qu'elle prenne la hauteur du bandeau */
+  object-fit: cover; /* Recadre l'image pour qu'elle remplisse bien le conteneur sans déformation */
+  display: block; /* Assure que l'image ne dépasse pas son conteneur */
+}
+
+/* Responsive: Ajustement pour les écrans plus petits */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 200px; /* Diminue la hauteur du carrousel pour les petits écrans */
+  }
+
+  .prev,
+  .next {
+    font-size: 16px; /* Réduit la taille des boutons sur petits écrans */
+    padding: 8px;
+  }
+}
+/* Caption de chaque élément */
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajuste la position pour centrer parfaitement */
+  background-color: rgba(
+    0,
+    39,
+    77,
+    0.8
+  ); /* Fond semi-transparent pour le texte */
+  padding: 20px;
+  color: #fff; /* Couleur du texte en blanc */
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1; /* Assure que la caption est au-dessus de l'image */
+
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Ajuste la largeur des boutons à l'intérieur de la caption */
+.carousel-caption button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00274d; /* Couleur du bouton */
+  color: #fff; /* Couleur du texte */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.carousel-caption button:hover {
+  background-color: #0056b3; /* Couleur au survol */
+}
+
+/** NOS PRESTATIONS **/
+
+.container-prestations {
+  background-color: lightgray;
+  padding-top: 50px;
+
+  padding-bottom: 20px;
+}
+
+.presta {
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 20px; /* Ajoutez du padding sur les côtés */
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 32px;
+
+  position: relative;
+  background-color: #00274d;
+  margin: 0;
+}
+
+/** IL NS RECOMMENDENT **/
+
+.google_review {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100%; /* Optionnel : ajuste la hauteur si nécessaire */
+}
+
+.google_review img {
+  max-width: 100%; /* Ajuste la taille de l'image */
+  height: auto; /* Maintient le ratio de l'image */
+}
+
+/* Style pour la grille d'images */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
+  justify-content: center; /* Centre les images horizontalement */
+  gap: 20px; /* Espace entre les images */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* Style pour chaque case d'image */
+.image-box {
+  flex: 1 1 calc(33.333% - 20px); /* Chaque boîte prend environ un tiers de la largeur */
+  max-width: calc(33.333% - 20px); /* Largeur maximale ajustée */
+  min-width: 200px; /* Largeur minimale pour les petites tailles d'écran */
+  height: 300px; /* Hauteur fixe pour chaque boîte */
+  display: flex;
+  overflow: hidden; /* Masque tout débordement de l'image */
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre autour de la boîte */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style pour les images */
+.image-box {
+  flex: 1 1 calc(33.333% - 20px); /* Chaque boîte prend environ un tiers de la largeur */
+  max-width: calc(33.333% - 20px); /* Largeur maximale */
+  min-width: 200px; /* Largeur minimale pour s'adapter aux petits écrans */
+  height: 300px; /* Hauteur fixe pour toutes les boîtes */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Masquer tout débordement d'image */
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre autour de la boîte */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style pour les images */
+.image-box {
+  flex: 1 1 calc(33.333% - 20px); /* Chaque boîte prend environ un tiers de la largeur */
+  max-width: calc(33.333% - 20px); /* Largeur maximale pour chaque boîte */
+  min-width: 200px; /* Largeur minimale pour s'adapter aux petits écrans */
+  height: 300px; /* Hauteur fixe sur les grands écrans */
+  display: flex;
+  overflow: hidden; /* Masque tout débordement d'image */
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre autour de la boîte */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style pour les images */
+.image-box img {
+  width: 100%; /* L'image occupe 100% de la largeur de la boîte */
+  height: 125%; /* L'image occupe 100% de la hauteur de la boîte */
+  object-fit: cover; /* L'image remplit la boîte sans distorsion, et sera recadrée si nécessaire */
+  display: block; /* Empêche les espaces blancs sous l'image */
+}
+
+/* Texte au bas de l'image */
+.image-txt {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 39, 77, 0.8);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+}
+
+/* Ajustements responsive */
+
+/* Résolutions moyennes (tablettes) */
+@media (max-width: 1444px) {
+  .image-box {
+    flex: 1 1 calc(33.333% - 20px); /* Trois boîtes par ligne sur les grands écrans */
+    height: 250px; /* Hauteur réduite pour les résolutions intermédiaires */
+  }
+}
+
+/* Écrans moyens, comme les tablettes en mode portrait */
+@media (max-width: 1024px) {
+  .image-box {
+    flex: 1 1 calc(50% - 10px); /* Deux boîtes par ligne */
+    max-width: calc(50% - 10px);
+    height: 250px; /* Hauteur ajustée pour les tablettes */
+  }
+  .image-box img {
+    height: 125%; /* L'image remplit toujours la boîte */
+  }
+}
+
+/* Petits écrans, comme les smartphones */
+@media (max-width: 690px) {
+  .image-box {
+    flex: 1 1 100%; /* Chaque boîte prend toute la largeur de l'écran */
+    max-width: 100%;
+    height: 200px; /* Hauteur adaptée aux petits écrans */
+  }
+
+  .image-box img {
+    height: 75%; /* L'image remplit toujours la boîte */
+  }
+}
+
+/* Écrans très petits (smartphones en mode portrait) */
+@media (max-width: 480px) {
+  .image-box {
+    flex: 1 1 100%; /* Chaque boîte prend toute la largeur de l'écran */
+    max-width: 100%;
+    height: 240px; /* Hauteur adaptée aux petits écrans */
+  }
+
+  .image-box img {
+    height: 100%; /* L'image remplit toujours la boîte */
+  }
+}
+
+/* Effet au survol */
+.image-box:hover img {
+  transform: scale(1.3); /* Zoom léger sur l'image */
+  opacity: 0.7;
+}
+
+/* Conteneur du carrousel avec 4 images visibles */
+.carousel-section-two {
+  overflow: hidden;
+  width: 100%; /* S'assure que le carrousel prend toute la largeur disponible */
+}
+
+.carousel-container-two {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-two {
+  display: flex;
+  transition: transform 5s linear; /* Animation fluide lors du défilement */
+  width: 100%;
+  will-change: transform;
+}
+
+.carousel-item-two {
+  flex: 0 0 25%; /* Affiche 4 images à la fois, ajustez si nécessaire */
+  box-sizing: border-box;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.carousel-item-two img {
+  width: 100%; /* Les images remplissent toute la largeur de leur conteneur */
+  height: 100%; /* Les images remplissent toute la hauteur de leur conteneur */
+  object-fit: cover; /* Maintient les proportions de l'image tout en remplissant le conteneur */
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajoute une ombre douce autour de l'image */
+  transition: box-shadow 0.3s ease; /* Ajoute une transition fluide lors du hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .carousel-item-two {
+    flex: 0 0 33.333%; /* Affiche 3 images à la fois */
+    padding-right: 30px; /* Réduit l'espacement entre les images */
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-item-two {
+    flex: 0 0 50%; /* Affiche 2 images à la fois */
+    padding-right: 20px; /* Réduit davantage l'espacement entre les images */
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-item-two {
+    flex: 0 0 100%; /* Affiche 1 image à la fois */
+    padding-right: 10px; /* Réduit l'espacement entre les images */
+    padding-left: 10px;
+  }
+}
+
+/** footer **/
+
+footer {
+  background-color: white; /* Couleur de fond du footer */
+
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Dispose les deux sections de manière espacée */
+  flex-wrap: wrap; /* Permet aux sections de passer à la ligne sur les petits écrans */
+  gap: 20px; /* Espacement entre les sections */
+  margin-bottom: 25px;
+}
+
+.footer-address,
+.footer-map {
+  flex: 1; /* Chaque section prend une largeur égale */
+  min-width: 300px; /* Largeur minimale pour chaque section */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+.footer-address h3,
+.footer-map h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+/* Styles pour la carte */
+.footer-map {
+  /* Ajoute une hauteur fixe pour que la carte soit carrée */
+  height: 400px; /* Ajustez cette valeur en fonction de la taille désirée */
+  position: relative; /* Nécessaire pour le conteneur de l'iframe */
+}
+
+.footer-map iframe {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  height: 100%; /* Prend toute la hauteur du conteneur pour être carrée */
+  border: none; /* Enlève la bordure de l'iframe */
+}
+
+@media (max-width: 1190px) {
+  .nav-buttons {
+    flex-wrap: wrap; /* Permet aux boutons de se répartir sur plusieurs lignes si nécessaire */
+  }
+
+  .nav-buttons-left,
+  .nav-buttons-right {
+    width: 100%; /* Les deux groupes prennent toute la largeur */
+    justify-content: space-between; /* Espace égal entre les boutons dans chaque groupe */
+  }
+
+  .nav-buttons-left button,
+  .nav-buttons-right button {
+    flex-grow: 1; /* Les boutons s'étendent pour occuper tout l'espace disponible */
+    text-align: center;
+    font-size: 25px; /* Ajustement de la taille de la police pour les petits écrans */
+    padding: 12px 15px; /* Ajustement du padding */
+  }
+
+  .phone-button {
+    justify-content: center;
+    flex-grow: 1; /* Le bouton téléphone prend aussi toute la largeur disponible */
+  }
+}
+
+/* Très petits écrans (smartphones) */
+@media (max-width: 800px) {
+  .logo {
+    display: none; /* Hides the logo when the viewport is 800px or narrower */
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap; /* Les boutons peuvent passer sur plusieurs lignes */
+  }
+
+  .nav-buttons-left,
+  .nav-buttons-right {
+    width: 100%; /* Les deux groupes prennent toute la largeur */
+    display: flex;
+    flex-direction: column; /* Les boutons sont disposés en colonne */
+    justify-content: space-around; /* Espace égal entre les boutons */
+  }
+
+  .nav-buttons-left button,
+  .nav-buttons-right button {
+    width: 100%; /* Les boutons prennent toute la largeur */
+    text-align: center;
+    font-size: 18px; /* Ajustement de la taille de la police */
+    padding: 12px 15px; /* Ajustement du padding */
+  }
+
+  .phone-button {
+    justify-content: center;
+  }
+}

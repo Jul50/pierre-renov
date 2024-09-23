@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>couverture - Pierre Rénovation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescategories.css" />
+
+    <!-- Lien vers une bibliothèque d'icônes pour utiliser des icônes de téléphone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      fetch("partials/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <header id="header"></header>
+    <h1>PEINTURE SUR BOISERIES</h1>
+
+    <section class="rectangle-wrapper">
+      <div class="rectangle">
+        <div class="image-container">
+          <img
+            src="asset/img/peinture-bois.jpg"
+            alt="photo d'une fenetre en bois en train d'être repeinte"
+          />
+        </div>
+        <div class="text-container">
+          <p>
+            La peinture fortement écaillée, les lames endommagées et les
+            ferrures partiellement rouillées... <br />
+            Les volets et les dessous de toit nécessitaient une rénovation
+            complète. Une exposition au vent, à la pluie et aux variations de
+            température agresse les bois extérieurs. Sans entretien régulier,
+            les lasures, peintures ou vernis se détériorent progressivement,
+            laissant le bois vulnérable à l'humidité et aux attaques biologiques
+            (champignons, insectes xylophages). Dans les zones les plus
+            exposées, l'infiltration d'eau peut même provoquer un pourrissement
+            progressif des lames. <br />
+            <br />
+            N'hésitez pas à contacter <strong>Pierre Rénovation</strong> pour
+            vos travaux de boiseries et obtenir des conseils sur les meilleures
+            solutions adaptées.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      fetch("partials/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <footer id="footer"></footer>
+  </body>
+</html>

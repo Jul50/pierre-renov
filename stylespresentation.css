@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.presentation,
+.contact-container {
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 30px;
+  background-color: lightgray;
+  padding-top: 30px;
+}
+
+.presentation p,
+p {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+}
+
+.presentation h1 {
+  margin-top: 0;
+}
+
+.contact-container p {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+/* Styles pour les écrans moyens (tablettes, etc.) */
+@media (max-width: 1024px) {
+  .presentation,
+  .contact-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+  }
+
+  .presentation p,
+  p,
+  .contact-container p {
+    font-size: 20px;
+  }
+}
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 768px) {
+  .presentation,
+  .contact-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+  }
+
+  .presentation p,
+  p,
+  .contact-container p {
+    font-size: 18px;
+  }
+}
+
+/* Très petits écrans (petits mobiles) */
+@media (max-width: 480px) {
+  .presentation,
+  .contact-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+  }
+
+  .presentation p,
+  p,
+  .contact-container p {
+    font-size: 16px;
+  }
+}
