@@ -488,7 +488,7 @@ footer {
   .nav-buttons-left,
   .nav-buttons-right {
     width: 100%; /* Les deux groupes prennent toute la largeur */
-    justify-content: space-between; /* Espace égal entre les boutons dans chaque groupe */
+    justify-content: space-evenly; /* Espace égal entre les boutons dans chaque groupe */
   }
 
   .nav-buttons-left button,
@@ -501,7 +501,6 @@ footer {
 
   .phone-button {
     justify-content: center;
-    flex-grow: 1; /* Le bouton téléphone prend aussi toute la largeur disponible */
   }
 }
 
